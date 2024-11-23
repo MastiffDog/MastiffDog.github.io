@@ -1,11 +1,53 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
+
 import './App.css';
+
+import { Logo} from '../shared/logo/logo.component';
+import { ModalWindow } from 'src/shared/modal/modal.component';
+import { Header } from 'src/shared/header/header.component';
+import { Layout } from 'src/shared/layout/layout.component';
+import { Card } from 'src/shared/card/card.component';
+import { BusketCard } from 'src/shared/busket_card/busket_card.component';
+import { Operation } from 'src/shared/operation/operation.component';
+import { AddButton } from 'src/shared/add_button/add_button.component';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <Logo/>*/}
+    
+      {/* <ModalWindow/> */}
+
+      {/* <Header/> */}
+
+      {/* <Layout/> */}
+
+      {/* <Card
+        name = "123"
+        img_Url=''
+        price={123}
+        cut_desc='туфта'
+      /> */}
+
+      {/* <BusketCard
+        name = "Некий товар" 
+      /> */}
+
+      {/* <Operation
+        name = "123"
+        img_Url=''
+        price={123}
+        cut_desc='туфта'
+        category = 'товары для дома'
+      /> */}
+
+      <AddButton
+        sum={1}
+      />  
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h3>Небольшая самопрезентация...</h3>
         <p className="Story">
@@ -19,7 +61,9 @@ function App() {
           наиболее гармоничным стейт-менеджером, поскольку очень много реакт-приложений пишутся в связке с MobX, а не
           Redux.
         </p>
-      </header>
+      </header> */}
+
+        
     </div>
   );
 }
