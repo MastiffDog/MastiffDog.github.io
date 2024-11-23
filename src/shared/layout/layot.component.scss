@@ -1,0 +1,12 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+// TODO: remove 2000px : it was created for Header test styles only
+.content {
+    width: 100%;
+    height: 2000px;
+}

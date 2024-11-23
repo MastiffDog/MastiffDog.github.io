@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 34px;
+    border: 1px solid gray; // TODO - this is temporary style
+    width: 300px;
+}
+
+.name {
+    padding-top: 4px;
+    padding-left: 10px;
+}
+
+.remove_container {
+    margin-right: 5px;
+    margin-left: auto;
+    margin-top: 2px;
+}
+
+.remove_button {
+    height: 30px;
+    cursor: pointer;
+}
