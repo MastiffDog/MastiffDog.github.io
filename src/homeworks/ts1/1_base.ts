@@ -36,7 +36,7 @@ export const getContrastType = (contrastValue : number) : string => (contrastVal
 export const shortColorRegExp = /^#[0-9a-f]{3}$/i;
 export const longColorRegExp = /^#[0-9a-f]{6}$/i;
 
-export const checkColor = (color : string) : string | void => {
+export const checkColor = (color : string) : never| void => {
   if (!longColorRegExp.test(color) && !shortColorRegExp.test(color)) throw new Error(`invalid hex color: ${color}`);
 };
 
